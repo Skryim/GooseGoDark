@@ -1,0 +1,209 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', cursive; /* Use a spooky font */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: darkred;
+    padding: 15px;
+    position: fixed; /* Make the navbar fixed */
+    width: 100%; /* Full width */
+    top: 0; /* Align at the top */
+    z-index: 1000; /* Make sure it's above other content */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; 
+    background: url(Images/Dragon2.png) no-repeat 50% 30%;
+    
+        
+    /* Add space for fixed navbar */
+
+}
+
+.title {
+    font-size: 3em;
+    animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.description {
+    font-size: 1.5em;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.ghost {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: url('https://example.com/ghost.png') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.gallery, .scaryvideos {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.image-preview img {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border: 2px solid white;
+    object-fit: cover;
+    
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center the images */
+}
+
+.image-container {
+    text-align: center; /* Center text below images */
+    margin: 10px; /* Space between each image container */
+}
+
+.image-note {
+    color: white; /* Text color */
+    font-size: 0.9em; /* Font size for notes */
+    margin-top: 5px; /* Space between image and note */
+    max-width: 200px; /* Limit width of notes to match image */
+}
+
+
+.scaryvideos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the top */
+    
+}
+
+
+.scary-image-container {
+     display: flex; /* Enable flexbox */    
+    flex-direction: row; /* Stack the image and text vertically */    align-items: center;
+    justify-content: flex-start;/* Center the image and text */  
+    margin: 20px; /* Space between containers */    
+    padding: 20px;   
+    max-width: 100%;
+background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 10px;
+}
+    
+.scary-image-container img {
+     width: 30%; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 110px; /* Space between image and note */
+
+}
+
+.scary-image-note {
+    color: white;
+    font-size: 0.8em;
+    max-width: 50%; /* Limit the width of the note */    
+    text-align: center; /* Center-align the text */    
+    margin: 0px; /* Center the note within the container */
+    margin-left: 20px;}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.section-title {
+    font-family: 'Creepster', cursive; /* Keep your spooky font */
+    color: crimson; /* Change text color to crimson */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Large title size */
+    margin-bottom: 20px; /* Space below the title */
+    text-transform: uppercase; /* Make all letters uppercase */
+    letter-spacing: 2px; /* Add space between letters for a spooky feel */
+    text-shadow: 2px 2px 5px #000000, 0 0 15px red; /* Add shadow for a glowing effect */
+    position: relative; /* For pseudo-element decoration */
+}
+
+---PoPup
+
+.scary-image-multiple-container {
+    display: flex; /* Aligns items in a row */
+    flex-wrap: wrap; /* Allows wrapping if there are too many images for the container */
+    justify-content: flex-start; /* Distribute space between images */
+    align-items: center; /* Vertically align items */
+    margin: 20px 0; /* Optional margin to separate from other content */
+    background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 10px;
+
+}
+
+.scary-image-multiple-container img {
+    width: 23%; /* Adjusts image width so they fit horizontally */
+    height: auto; /* Maintains aspect ratio */
+    margin: 5px; /* Adds space between images */
+
+}
+
+.scary-image-multiple-note {
+    width: 100%;    max-width: 80%; /* Makes sure the note doesn't extend too wide */    color: white;    text-align: center; /* Centers the text */    margin: 0 auto; /* Centers the element itself in the container */    margin-top: 20px;}
