@@ -20,3 +20,9 @@ document.getElementById("enterButton").addEventListener("click", function() {
         alert("You have entered the haunted house...");
     }, 2000);
 });
+
+
+function mypopup2() {
+    mywindow = window.open("popup2.html", "mywindow", "location=1,status=1,scrollbars=1,  width=600,height=700");
+    mywindow.moveTo(0, 0);
+}
