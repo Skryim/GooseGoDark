@@ -147,7 +147,7 @@ body {
     justify-content: flex-start;/* Center the image and text */  
     margin: 20px; /* Space between containers */    
     padding: 20px;   
-    max-width: 100%;
+    max-width: 100%;s
 background-color: rgba(44, 62, 80, 0.8);
     border-radius: 10px;
 }
@@ -207,3 +207,33 @@ footer {
 
 .scary-image-multiple-note {
     width: 100%;    max-width: 80%; /* Makes sure the note doesn't extend too wide */    color: white;    text-align: center; /* Centers the text */    margin: 0 auto; /* Centers the element itself in the container */    margin-top: 20px;}
+
+video {
+
+    width: 90%;
+}
+
+#myVideo {
+    position: relative;
+    border-radius: 50px;
+    left: 5%;
+    
+
+}
+
+.container6 {
+    height:10px;
+    width:1000px;
+   
+    
+}
+
+#button3 {
+    
+    background:red;
+    color: white;
+    border-radius: 30px;
+    margin: 5px;
+     margin-left: 40px;
+
+
